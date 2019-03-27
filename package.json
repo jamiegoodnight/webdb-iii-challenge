@@ -1,14 +1,14 @@
 {
-  "name": "lambda",
+  "name": "webdb-iii-challenge",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "repository": "https://github.com/jamiegoodnight/webdb-iii-challenge.git",
+  "author": "Jamie Goodnight <goodnightlambda@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "node",
     "server": "nodemon"
   },
-  "keywords": [],
-  "author": "Jamie Goodnight",
   "dependencies": {
     "express": "^4.16.4",
     "knex": "^0.16.3",
