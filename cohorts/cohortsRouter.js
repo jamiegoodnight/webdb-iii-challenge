@@ -103,10 +103,15 @@ router.put("/:id", (req, res) => {
 
 router.get("/:id/students", (req, res) => {
   const id = req.params.id;
-
   db.getCohortStudents(id)
     .then(students => {
-      res.status(200).json(students);
+      if (students) {
+        res.status(200).json(students);
+      } else {
+        res.status(404).json({
+          message: "The cohort with the specified id could not be found!"
+        });
+      }
     })
     .catch(err => {
       res
