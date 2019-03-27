@@ -6,6 +6,6 @@ const server = express();
 
 server.use(express.json());
 
-server.use("/api/cohorts");
+server.use("/api/cohorts", cohortsRouter);
 
 module.exports = server;
