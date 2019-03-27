@@ -19,7 +19,7 @@ function getById(id) {
     .first();
 }
 
-function insert(post) {
+function insert(cohort) {
   return db("cohorts")
     .insert(cohort)
     .then(ids => {

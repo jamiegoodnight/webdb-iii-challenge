@@ -1,5 +1,5 @@
 exports.up = function(knex, Promise) {
-  return knex.schema.createTable("cohorts", function(tbl) {
+  return knex.schema.createTable("cohorts", function(cohorts) {
     //   primary key called id make it auto-increment
     tbl.increments();
     tbl
